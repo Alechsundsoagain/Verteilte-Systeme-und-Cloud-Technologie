@@ -1,0 +1,18 @@
+auth:
+  username: admin
+  password: <a strong password>
+
+ingress:
+  enabled: true
+  className: public
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-issuer
+  hosts:
+    - host: rabbitmq.machasing.com
+      paths:
+        - path: /
+          pathType: Prefix
+  tls:
+    - hosts:
+      - rabbitmq.machasing.com
+      secretName: rabbitmq-tls

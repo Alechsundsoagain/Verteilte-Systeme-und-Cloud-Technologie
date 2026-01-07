@@ -1,0 +1,98 @@
+% Domänenanalyse Energiegemeinschaften
+\section{Domänenanalyse Energiegemeinschaften}
+    \subsection{Überblick über Energiegemeinschaften}
+        Energiegemeinschaften sind ein Teil des österreichischen Erneuerbaren-Ausbau-Gesetzes (EAG).
+        Bürger können mit diesen ihre produzierte Energie an Konsumenten verteilen die sich ebenso in der Gemeinschaft befinden.
+        Hierbei wird die Infrastruktur eines Netzbetreibers verwendet, um die Energie an die Konsumenten zu liefern.
+        Die Mitglieder der Gemeinschaft können dadurch Energie untereinander Handeln.
+        Die Abrechnung wird hierbei von der Gemeinschaft übernommen.
+
+        Die Mitglieder einer Gesellschaft lassen sich in folgende Rollen unterteilen.
+        \begin{itemize}[]
+            \item \textbf{Erzeuger}: Produzieren Energie, z.\,B. durch Photovoltaik.
+            \item \textbf{Verbraucher}: Nutzen die erzeugte Energie.
+            \item \textbf{Prosumer}: Kombinieren Erzeugung und Verbrauch.
+        \end{itemize}
+
+    \subsection{Use Case Diagramm}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.8\textwidth]{images/UseCase-Diagram.png} % Platzhalter – Diagramm bitte extern erstellen
+            \caption{Use Case Diagramm für Energiegemeinschaft}
+        \end{figure}
+
+        \begin{table}[]
+            \centering
+            \begin{tabular}{l|l}
+                \hline
+                \textbf{Akteur} & \textbf{Use Cases} \\
+                \hline
+                Energie-Producer & Energie einspeisen in BEG \\
+                & Einspeisemenge überwachen \\
+                & Vergütung erhalten \\
+                \hline
+                Energie-Consumer & Energie aus BEG beziehen \\
+                & Verbrauchsdaten einsehen \\
+                & Rechnung erhalten \\
+                \hline
+                Energie-Netzbetreiber & Netzstabilität überwachen \\
+                & Einspeise- und Verbrauchsdaten abrufen \\
+                \hline
+                Systemadministrator & Nutzer verwalten \\
+                & Datenintegrität sicherstellen \\
+                & Schnittstellen betreuen \\
+                \hline
+                Staat / Behörde & Datenzugriff für Monitoring \\
+                & Förderungen verwalten \\
+                & Einhaltung gesetzlicher Vorgaben prüfen \\
+                \hline
+            \end{tabular}
+            \caption{Rollen und Aufgaben in einer Bürgerenergiegemeinschaft}
+            \label{tab:beg-akteure}
+        \end{table}
+
+
+    \subsection{Priorisierte Anforderungsliste}
+        \subsubsection{Funktionale Anforderungen}
+
+            \begin{table}[h]
+                \centering
+                \begin{tabular}{|l|p{4cm}|p{8cm}|}
+                    \hline
+                    \textbf{Priorität} & \textbf{Anforderung} & \textbf{Begründung} \\
+                    \hline
+                    Hoch & Datenerfassung von Smart Metern & Grundlage für alle weiteren Prozesse wie Abrechnung und Bilanzierung \\
+                    \hline
+                    Hoch & Abrechnungslogik innerhalb der Gemeinschaft & Zentrale Funktion zur finanziellen Transparenz und Fairness \\
+                    \hline
+                    Mittel & Verwaltung von Teilnehmern & Wichtig für Rollenmanagement, aber weniger zeitkritisch \\
+                    \hline
+                    Mittel & Energiebilanzierung & Relevant für Analyse und Optimierung, aber abhängig von Messdaten \\
+                    \hline
+                    Niedrig & Reporting und Visualisierung & Unterstützt Usability und Transparenz, aber nicht kritisch für MVP \\
+                    \hline
+                \end{tabular}
+                \caption{Funktionale Anforderungen}
+            \end{table}
+
+        \subsubsection{Nicht-funktionale Anforderungen}
+
+            \begin{table}[h]
+                \centering
+                \begin{tabular}{|l|p{4cm}|p{8cm}|}
+                    \hline
+                    \textbf{Priorität} & \textbf{Anforderung} & \textbf{Begründung} \\
+                    \hline
+                    Hoch & Datenschutz und Datensicherheit & Gesetzlich verpflichtend (DSGVO), besonders bei personenbezogenen Daten \\
+                    \hline
+                    Hoch & Verfügbarkeit und Ausfallsicherheit & System muss zuverlässig laufen, besonders bei Echtzeitdaten \\
+                    \hline
+                    Mittel & Skalierbarkeit & Wichtig für zukünftiges Wachstum, aber initial begrenzt relevant \\
+                    \hline
+                    Mittel & Performance (Latenz, Durchsatz) & Relevant für Nutzererlebnis, aber abhängig vom konkreten Use Case \\
+                    \hline
+                    Niedrig & Interoperabilität mit bestehenden Systemen & Nice-to-have, aber nicht zwingend für initiale Version \\
+                    \hline
+                \end{tabular}
+                \caption{Nicht-funktionale Anforderungen}
+            \end{table}
