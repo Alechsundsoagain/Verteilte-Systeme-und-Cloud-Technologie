@@ -1,0 +1,6 @@
+C:\Users\vikto\Documents\ITS\VSCT\Verteilte-Systeme-und-Cloud-Technologie\Project\Services\Metering\obj\Debug\net9.0\Metering.csproj.AssemblyReference.cache
+C:\Users\vikto\Documents\ITS\VSCT\Verteilte-Systeme-und-Cloud-Technologie\Project\Services\Metering\obj\Debug\net9.0\Metering.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vikto\Documents\ITS\VSCT\Verteilte-Systeme-und-Cloud-Technologie\Project\Services\Metering\obj\Debug\net9.0\Metering.AssemblyInfoInputs.cache
+C:\Users\vikto\Documents\ITS\VSCT\Verteilte-Systeme-und-Cloud-Technologie\Project\Services\Metering\obj\Debug\net9.0\Metering.AssemblyInfo.cs
+C:\Users\vikto\Documents\ITS\VSCT\Verteilte-Systeme-und-Cloud-Technologie\Project\Services\Metering\obj\Debug\net9.0\Metering.csproj.CoreCompileInputs.cache
+C:\Users\vikto\Documents\ITS\VSCT\Verteilte-Systeme-und-Cloud-Technologie\Project\Services\Metering\obj\Debug\net9.0\Metering.sourcelink.json

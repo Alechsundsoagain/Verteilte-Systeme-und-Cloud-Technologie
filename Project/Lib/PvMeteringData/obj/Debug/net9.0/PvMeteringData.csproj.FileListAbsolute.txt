@@ -1,0 +1,12 @@
+C:\Users\vikto\Documents\ITS\VSCT\Verteilte-Systeme-und-Cloud-Technologie\Project\Lib\PvMeteringData\bin\Debug\net9.0\PvMeteringData.deps.json
+C:\Users\vikto\Documents\ITS\VSCT\Verteilte-Systeme-und-Cloud-Technologie\Project\Lib\PvMeteringData\bin\Debug\net9.0\PvMeteringData.dll
+C:\Users\vikto\Documents\ITS\VSCT\Verteilte-Systeme-und-Cloud-Technologie\Project\Lib\PvMeteringData\bin\Debug\net9.0\PvMeteringData.pdb
+C:\Users\vikto\Documents\ITS\VSCT\Verteilte-Systeme-und-Cloud-Technologie\Project\Lib\PvMeteringData\obj\Debug\net9.0\PvMeteringData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vikto\Documents\ITS\VSCT\Verteilte-Systeme-und-Cloud-Technologie\Project\Lib\PvMeteringData\obj\Debug\net9.0\PvMeteringData.AssemblyInfoInputs.cache
+C:\Users\vikto\Documents\ITS\VSCT\Verteilte-Systeme-und-Cloud-Technologie\Project\Lib\PvMeteringData\obj\Debug\net9.0\PvMeteringData.AssemblyInfo.cs
+C:\Users\vikto\Documents\ITS\VSCT\Verteilte-Systeme-und-Cloud-Technologie\Project\Lib\PvMeteringData\obj\Debug\net9.0\PvMeteringData.csproj.CoreCompileInputs.cache
+C:\Users\vikto\Documents\ITS\VSCT\Verteilte-Systeme-und-Cloud-Technologie\Project\Lib\PvMeteringData\obj\Debug\net9.0\PvMeteringData.sourcelink.json
+C:\Users\vikto\Documents\ITS\VSCT\Verteilte-Systeme-und-Cloud-Technologie\Project\Lib\PvMeteringData\obj\Debug\net9.0\PvMeteringData.dll
+C:\Users\vikto\Documents\ITS\VSCT\Verteilte-Systeme-und-Cloud-Technologie\Project\Lib\PvMeteringData\obj\Debug\net9.0\refint\PvMeteringData.dll
+C:\Users\vikto\Documents\ITS\VSCT\Verteilte-Systeme-und-Cloud-Technologie\Project\Lib\PvMeteringData\obj\Debug\net9.0\PvMeteringData.pdb
+C:\Users\vikto\Documents\ITS\VSCT\Verteilte-Systeme-und-Cloud-Technologie\Project\Lib\PvMeteringData\obj\Debug\net9.0\ref\PvMeteringData.dll

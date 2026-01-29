@@ -4,14 +4,14 @@
     "C:\\Users\\vikto\\Documents\\ITS\\VSCT\\Verteilte-Systeme-und-Cloud-Technologie\\Project\\Services\\Collector\\Collector.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vikto\\Documents\\ITS\\VSCT\\Verteilte-Systeme-und-Cloud-Technologie\\Project\\Services\\Collector\\Collector.csproj": {
+    "C:\\Users\\vikto\\Documents\\ITS\\VSCT\\Verteilte-Systeme-und-Cloud-Technologie\\Project\\Lib\\PvMeteringData\\PvMeteringData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vikto\\Documents\\ITS\\VSCT\\Verteilte-Systeme-und-Cloud-Technologie\\Project\\Services\\Collector\\Collector.csproj",
-        "projectName": "Collector",
-        "projectPath": "C:\\Users\\vikto\\Documents\\ITS\\VSCT\\Verteilte-Systeme-und-Cloud-Technologie\\Project\\Services\\Collector\\Collector.csproj",
+        "projectUniqueName": "C:\\Users\\vikto\\Documents\\ITS\\VSCT\\Verteilte-Systeme-und-Cloud-Technologie\\Project\\Lib\\PvMeteringData\\PvMeteringData.csproj",
+        "projectName": "PvMeteringData",
+        "projectPath": "C:\\Users\\vikto\\Documents\\ITS\\VSCT\\Verteilte-Systeme-und-Cloud-Technologie\\Project\\Lib\\PvMeteringData\\PvMeteringData.csproj",
         "packagesPath": "C:\\Users\\vikto\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vikto\\Documents\\ITS\\VSCT\\Verteilte-Systeme-und-Cloud-Technologie\\Project\\Services\\Collector\\obj\\",
+        "outputPath": "C:\\Users\\vikto\\Documents\\ITS\\VSCT\\Verteilte-Systeme-und-Cloud-Technologie\\Project\\Lib\\PvMeteringData\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,10 +49,86 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\vikto\\Documents\\ITS\\VSCT\\Verteilte-Systeme-und-Cloud-Technologie\\Project\\Services\\Collector\\Collector.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\vikto\\Documents\\ITS\\VSCT\\Verteilte-Systeme-und-Cloud-Technologie\\Project\\Services\\Collector\\Collector.csproj",
+        "projectName": "Collector",
+        "projectPath": "C:\\Users\\vikto\\Documents\\ITS\\VSCT\\Verteilte-Systeme-und-Cloud-Technologie\\Project\\Services\\Collector\\Collector.csproj",
+        "packagesPath": "C:\\Users\\vikto\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vikto\\Documents\\ITS\\VSCT\\Verteilte-Systeme-und-Cloud-Technologie\\Project\\Services\\Collector\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\vikto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\vikto\\Documents\\ITS\\VSCT\\Verteilte-Systeme-und-Cloud-Technologie\\Project\\Lib\\PvMeteringData\\PvMeteringData.csproj": {
+                "projectPath": "C:\\Users\\vikto\\Documents\\ITS\\VSCT\\Verteilte-Systeme-und-Cloud-Technologie\\Project\\Lib\\PvMeteringData\\PvMeteringData.csproj"
+              },
+              "C:\\Users\\vikto\\Documents\\ITS\\VSCT\\Verteilte-Systeme-und-Cloud-Technologie\\Project\\Services\\Metering\\Metering.csproj": {
+                "projectPath": "C:\\Users\\vikto\\Documents\\ITS\\VSCT\\Verteilte-Systeme-und-Cloud-Technologie\\Project\\Services\\Metering\\Metering.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
           "dependencies": {
             "Microsoft.Extensions.Hosting": {
               "target": "Package",
               "version": "[9.0.9, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.8.1, )"
             }
           },
           "imports": [
@@ -66,24 +142,89 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[9.0.11, 9.0.11]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[9.0.11, 9.0.11]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[9.0.11, 9.0.11]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[9.0.11, 9.0.11]"
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
             }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\vikto\\Documents\\ITS\\VSCT\\Verteilte-Systeme-und-Cloud-Technologie\\Project\\Services\\Metering\\Metering.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\vikto\\Documents\\ITS\\VSCT\\Verteilte-Systeme-und-Cloud-Technologie\\Project\\Services\\Metering\\Metering.csproj",
+        "projectName": "Metering",
+        "projectPath": "C:\\Users\\vikto\\Documents\\ITS\\VSCT\\Verteilte-Systeme-und-Cloud-Technologie\\Project\\Services\\Metering\\Metering.csproj",
+        "packagesPath": "C:\\Users\\vikto\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vikto\\Documents\\ITS\\VSCT\\Verteilte-Systeme-und-Cloud-Technologie\\Project\\Services\\Metering\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\vikto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\vikto\\Documents\\ITS\\VSCT\\Verteilte-Systeme-und-Cloud-Technologie\\Project\\Lib\\PvMeteringData\\PvMeteringData.csproj": {
+                "projectPath": "C:\\Users\\vikto\\Documents\\ITS\\VSCT\\Verteilte-Systeme-und-Cloud-Technologie\\Project\\Lib\\PvMeteringData\\PvMeteringData.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.8.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
           ],
+          "assetTargetFallback": true,
+          "warn": true,
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"

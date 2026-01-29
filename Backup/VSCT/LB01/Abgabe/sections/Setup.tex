@@ -1,0 +1,39 @@
+\section{Setup-Dokumentation}
+
+    \subsection{Entwicklungsumgebung}
+
+        Für die lokale Entwicklungsumgebung wurden folgende Tools installiert und konfiguriert:
+
+        \begin{itemize}[]
+            \item Docker Desktop (Version 24.) mit WSL2-Integration (Ubuntu)
+            \item .NET 9 SDK
+            \item kubectl, helm, Git
+            \item JetBrains Rider (IDE)
+            \item MongoDB Compass (DataBase Viewer)
+            \item Postman (API Network)
+            \item Lens IDE (Cybernetes Cluster)
+        \end{itemize}
+
+    \subsection{k3s Cluster Setup mit k3d}
+        Ein k3s Cluster wurde erfolgreich mit k3d erstellt:
+        \begin{figure}[h]
+            \centering
+            \includegraphics[width=0.4\textwidth]{images/kubectl_getnodes_getnamespaces.png}
+            \caption{Screenshot der laufenden k3s Nodes}
+        \end{figure}
+        \begin{figure}[h]
+            \centering
+            \includegraphics[width=0.4\textwidth]{images/services.png}
+            \caption{Screenshot der laufenden Services}
+        \end{figure}
+
+    \subsection{Probleme und Lösungen}
+        \begin{itemize}[]
+            \item \textbf{RabbitMQ und MongoDB Installation fehlgeschlagen} Docker Login auch in der WSL nötig gewesen.
+            \item \textbf{Port Forwarding hat nicht funktioniert} In 2h nochmal probiert.
+            \item \textbf{Kubernetes wurden von Lens nicht erkannt:} Herauskopieren der konfiguration von innerhalb von WSL.
+            \item \textbf{MongoDB nicht verbindbar von außerhalb des Containers:} Verwendung von root und secretpass.
+            \item \textbf{Veraltete WSL Version + Fehler in der Deinstallation:} Wiederholtes updaten.
+            \item \textbf{Cluster-Commands darf man nicht aus adobe kopieren:} Datei in SumatraPDF öffnen und von dort kopieren.
+            \item \textbf{:} 
+        \end{itemize}

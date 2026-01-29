@@ -1,0 +1,6 @@
+C:\Users\vikto\Documents\ITS\VSCT\Verteilte-Systeme-und-Cloud-Technologie\Project\Services\Collector\obj\Debug\net9.0\Collector.csproj.AssemblyReference.cache
+C:\Users\vikto\Documents\ITS\VSCT\Verteilte-Systeme-und-Cloud-Technologie\Project\Services\Collector\obj\Debug\net9.0\Collector.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vikto\Documents\ITS\VSCT\Verteilte-Systeme-und-Cloud-Technologie\Project\Services\Collector\obj\Debug\net9.0\Collector.AssemblyInfoInputs.cache
+C:\Users\vikto\Documents\ITS\VSCT\Verteilte-Systeme-und-Cloud-Technologie\Project\Services\Collector\obj\Debug\net9.0\Collector.AssemblyInfo.cs
+C:\Users\vikto\Documents\ITS\VSCT\Verteilte-Systeme-und-Cloud-Technologie\Project\Services\Collector\obj\Debug\net9.0\Collector.csproj.CoreCompileInputs.cache
+C:\Users\vikto\Documents\ITS\VSCT\Verteilte-Systeme-und-Cloud-Technologie\Project\Services\Collector\obj\Debug\net9.0\Collector.sourcelink.json

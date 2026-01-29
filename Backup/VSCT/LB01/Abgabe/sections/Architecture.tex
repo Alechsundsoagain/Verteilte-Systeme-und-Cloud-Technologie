@@ -1,0 +1,59 @@
+\section{Softwarearchitektur}
+    \subsection{Service-Identifikation}
+        Basierend auf Domain-Driven Design Prinzipien wurden folgende Microservices identifiziert:
+
+        \begin{itemize}[]
+        \item \textbf{Community Management Service}: Verwaltung von Teilnehmern, Rollen und Beziehungen.
+        \item \textbf{Billing Service}: Abrechnung, Fakturierung und Zahlungsstatus.
+        \item \textbf{Metering Service}: Erfassung und Aggregation von Smart Meter-Daten.
+        \item \textbf{Analysis Service}: Visualisierung, Analyse und Export von Energiedaten.
+        \item \textbf{Core Service}: koordiniert Services
+        \end{itemize}
+
+        Jeder Service besitzt eine eigene Datenbankinstanz (MongoDB) und kommuniziert über RabbitMQ (asynchron) sowie REST (synchron).
+
+    \subsection{Architekturdiagramme}
+        \subsubsection*{System Context Diagram (C4 Level 1)}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width=0.9\textwidth]{images/SystemContextDiagram.png} % Diagramm extern erstellen
+                \caption{Systemkontextdiagramm der Energiegemeinschafts-Plattform}
+            \end{figure}
+
+        \subsubsection*{Sequenzdiagramm: Energieabrechnung}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width=0.9\textwidth]{images/SequenzDiagram.png} % Diagramm extern erstellen
+                \caption{Sequenzdiagramm für Energieabrechnung}
+            \end{figure}
+
+    \subsection{Kommunikationsdesign}
+        \subsubsection*{Synchrone Kommunikation}
+            \begin{itemize}[]
+                \item REST APIs sowie für Benutzerinteraktion und Admin-Funktionen als auch für interne Service-Kommunikation
+            \end{itemize}
+
+        \subsubsection*{Asynchrone Kommunikation über RabbitMQ}
+            \begin{itemize}[]
+                \item \textbf{Exchange Types}: Topic Exchange für flexible Routing-Strategien
+                \item \textbf{Queue Design}: Dedizierte Queues pro Service, z.\,B. \texttt{billing.queue}, \texttt{metering.queue}
+                \item \textbf{Message Schemas}: JSON-basierte Payloads mit Validierung via JSON Schema
+            \end{itemize}
+
+    \subsection{Technologieentscheidungen}
+
+        \begin{table}[H]
+            \centering
+            \begin{tabular}{@{}llp{7cm}@{}}
+                \toprule
+                \textbf{Komponente} & \textbf{Technologie} & \textbf{Begründung} \\ \midrule
+                Programmiersprache & C\# mit .NET 9 & Moderne Sprache mit guter Microservice-Unterstützung und Performance \\
+                Datenbank          & MongoDB        & Schema-flexibel, ideal für heterogene Energiedaten \\
+                Message Broker     & RabbitMQ       & Etabliert, unterstützt Topic Exchange und hohe Zuverlässigkeit \\
+                Containerisierung  & Docker         & Standard für portable Deployments \\
+                Orchestrierung     & k3s mit k3d    & Lightweight Kubernetes für lokale Entwicklung \\
+                API-Kommunikation  & REST           & REST für externe Clients und interne Services \\
+                \bottomrule
+            \end{tabular}
+            \caption{Technologieentscheidungen und Begründungen}
+        \end{table}
