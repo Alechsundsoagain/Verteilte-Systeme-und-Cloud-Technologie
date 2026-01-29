@@ -2144,19 +2144,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Alexander Haas\\.nuget\\packages\\": {}
+    "C:\\Users\\vikto\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alexander Haas\\Desktop\\Verteilte-Systeme-und-Cloud-Technologie\\Project\\Services\\Metering\\Metering.csproj",
+      "projectUniqueName": "C:\\Users\\vikto\\Documents\\ITS\\VSCT\\Verteilte-Systeme-und-Cloud-Technologie\\Project\\Services\\Metering\\Metering.csproj",
       "projectName": "Metering",
-      "projectPath": "C:\\Users\\Alexander Haas\\Desktop\\Verteilte-Systeme-und-Cloud-Technologie\\Project\\Services\\Metering\\Metering.csproj",
-      "packagesPath": "C:\\Users\\Alexander Haas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alexander Haas\\Desktop\\Verteilte-Systeme-und-Cloud-Technologie\\Project\\Services\\Metering\\obj\\",
+      "projectPath": "C:\\Users\\vikto\\Documents\\ITS\\VSCT\\Verteilte-Systeme-und-Cloud-Technologie\\Project\\Services\\Metering\\Metering.csproj",
+      "packagesPath": "C:\\Users\\vikto\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\vikto\\Documents\\ITS\\VSCT\\Verteilte-Systeme-und-Cloud-Technologie\\Project\\Services\\Metering\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Alexander Haas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\vikto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2186,7 +2191,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net9.0": {
@@ -2221,8 +2226,16 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\vikto\\Documents\\ITS\\VSCT\\Verteilte-Systeme-und-Cloud-Technologie\\Project\\Services\\Metering\\obj\\project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0."
+    }
+  ]
 }
