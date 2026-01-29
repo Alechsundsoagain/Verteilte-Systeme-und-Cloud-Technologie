@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package user;
+
+// ---------- SERVICE ----------
+
+service UserService {
+  rpc CreateUser (CreateUserRequest) returns (CreateUserResponse);
+  rpc DeleteUser (DeleteUserRequest) returns (DeleteUserResponse);
+}
+
+// ---------- REQUESTS ----------
+
+message CreateUserRequest {
+  string username = 1;
+  string role = 2;
+}
+
+message DeleteUserRequest {
+  string id = 1;
+}
+
+// ---------- RESPONSES ----------
+
+message CreateUserResponse {
+  string id = 1;
+}
+
+message DeleteUserResponse {
+  bool success = 1;
+}

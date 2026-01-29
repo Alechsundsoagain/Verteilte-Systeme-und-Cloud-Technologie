@@ -48,5 +48,15 @@
     "C:\\Users\\vikto\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512",
     "C:\\Users\\vikto\\.nuget\\packages\\zstdsharp.port\\0.7.3\\zstdsharp.port.0.7.3.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "message": "Problem reading the cache file C:\\Users\\vikto\\Documents\\ITS\\VSCT\\Verteilte-Systeme-und-Cloud-Technologie\\Project\\Services\\Collector\\obj\\project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0.",
+      "projectPath": "C:\\Users\\vikto\\Documents\\ITS\\VSCT\\Verteilte-Systeme-und-Cloud-Technologie\\Project\\Services\\Collector\\Collector.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\vikto\\Documents\\ITS\\VSCT\\Verteilte-Systeme-und-Cloud-Technologie\\Project\\Services\\Collector\\Collector.csproj",
+      "targetGraphs": []
+    }
+  ]
 }

@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package consumption;
+
+// ---------- SERVICE ----------
+
+service ConsumptionService {
+  rpc GetConsumption (GetConsumptionRequest)
+      returns (GetConsumptionResponse);
+}
+
+// ---------- REQUEST ----------
+
+message GetConsumptionRequest {
+  string device_id = 1;
+}
+
+// ---------- RESPONSE ----------
+
+message GetConsumptionResponse {
+  string device_id = 1;
+  double value = 2;
+  int64 timestamp = 3;
+}
